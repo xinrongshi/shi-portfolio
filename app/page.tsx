@@ -4,7 +4,7 @@ import './globals.css'
 
 const Home: React.FC = () => {
   return (
-    <div className="bg-eerie">
+    <div>
       <section id="home">
         <h2></h2>
       </section>
