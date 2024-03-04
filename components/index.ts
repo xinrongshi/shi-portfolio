@@ -1,2 +1,2 @@
-export { SideBar } from './SideBar/SideBar';
+export { Navbar } from './Navbar/Navbar';
 export { Page } from './Page/Page'
