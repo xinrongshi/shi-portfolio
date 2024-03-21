@@ -1,16 +1,11 @@
 import React from 'react';
 import './globals.css'
+import Intro from '@/components/intro'
 
 
-const Home: React.FC = () => {
-  return (
-    <div>
-      <section id="home">
-        <h2></h2>
-      </section>
-
-    </div>
-  );
+export default function Home() {
+  return <main className='flex flex-col items-center px-4 '>
+    <Intro/>
+  </main>
 };
 
-export default Home;
