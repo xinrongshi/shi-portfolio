@@ -3,6 +3,10 @@ import React from "react";
 import Image from "next/image";
 import portrait from "@/public/image.png";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { HiDownload } from "react-icons/hi";
+import { FaGithubSquare } from "react-icons/fa";
 
 export default function Intro() {
   return (
@@ -11,7 +15,7 @@ export default function Intro() {
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: [0, 1, 0.5, 1, 0.7, 1, 0.9, 1]}}
+            animate={{ opacity: 1, scale: [0, 1, 0.5, 1, 0.7, 1, 0.9, 1] }}
             transition={{
               type: "spring",
               stiffness: 125,
@@ -37,10 +41,21 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         className="mb-10 mt-12 px-4 text-xl font-medium !leading-[1.5] sm:text-3xl"
       >
-        <span className="font-bold">Hey</span> there! <motion.span className="" initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ type: "spring", stiffness: 150, delay: 0.5, duration: 1.7 }} >
-            👋
-          </motion.span> I'm{" "}
-        <span className="font-bold">Xinrong Shi</span>, a seasoned Software
+        <span className="font-bold">Hey</span> there!{" "}
+        <motion.span
+          className=""
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 150,
+            delay: 0.5,
+            duration: 1.7,
+          }}
+        >
+          👋
+        </motion.span>{" "}
+        I'm <span className="font-bold">Xinrong Shi</span>, a seasoned Software
         Engineer with <span className="font-bold"> 7+ years</span> of
         experience. From mastering
         <span className="font-bold"> backend </span>intricacies to seamlessly
@@ -48,6 +63,46 @@ export default function Intro() {
         got you covered. Let's <span className="font-bold">connect</span> and
         build something awesome <span className="font-bold">together</span>! 🚀
       </motion.p>
+      <motion.div
+        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1 }}
+      >
+        <Link
+          href="#contact"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none
+          focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+        >
+          Contact me here
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+        </Link>
+        <a
+          className="group bg-white text-gray-700 px-7 py-3 flex items-center gap-2 rounded-full outline-none
+          focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
+          href="/Xinrong-shi-CV"
+          download
+        >
+          Download CV{" "}
+          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+        </a>
+        <a
+          className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full text-[1.35rem]
+          focus:scale-[1.2] hover:text-gray-950 hover:scale-[1.2] active:scale-105 transition cursor-pointer border border-black/10"
+          href="https://www.linkedin.com/in/xinrong-shi/"
+          target="_blank"
+        >
+          <BsLinkedin />
+        </a>
+        <a
+          className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full text-[1.35rem] 
+          focus:scale-[1.2] hover:text-gray-950 hover:scale-[1.2] active:scale-105 transition cursor-pointer border border-black/10"
+          href="https://github.com/xinrongshi"
+          target="_blank"
+        >
+          <FaGithubSquare />
+        </a>
+      </motion.div>
     </section>
   );
 }
