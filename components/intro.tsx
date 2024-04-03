@@ -10,7 +10,7 @@ import { FaGithubSquare } from "react-icons/fa";
 
 export default function Intro() {
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section id="home" className="scroll-mt-28 mb-28 max-w-[50rem] text-center sm:mb-0">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -55,7 +55,7 @@ export default function Intro() {
         >
           👋
         </motion.span>{" "}
-        I'm <span className="font-bold">Xinrong Shi</span>, a seasoned Software
+        I'm <span className="font-bold">Lexi</span>, a seasoned Software
         Engineer with <span className="font-bold"> 7+ years</span> of
         experience. From mastering
         <span className="font-bold"> backend </span>intricacies to seamlessly
@@ -80,7 +80,7 @@ export default function Intro() {
         <a
           className="group bg-white text-gray-700 px-7 py-3 flex items-center gap-2 rounded-full outline-none
           focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
-          href="/Xinrong-shi-CV"
+          href="/public/Xinrong-shi-CV"
           download
         >
           Download CV{" "}
