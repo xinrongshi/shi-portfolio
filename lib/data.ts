@@ -34,30 +34,40 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+
+  {
+    title: "Master’s Degree (First Class Honours) / Computer And Information Sciences",
+    company: "Auckland University of Technology",
+    description:
+      "During my pursuit of a Master's degree in Computer and Information Sciences, I focused primarily on enriching my knowledge in the field of artificial intelligence (AI). This period of learning was filled with challenges and opportunities for growth, allowing me to develop a deeper understanding of various aspects of AI.",
+    icon: React.createElement(LuGraduationCap),
+    date: "JULY 2022 - DECEMBER 2023",
+  },
   {
     title: "Software Engineer",
-    company: "Shenzhen Tianlanse Software Service Ltd.",
+    company: "TD SYNNEX Information Technologies Ltd. (U.S.-based company ranked No. 215 on the 2023 FORTUNE Global 500 List)",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "AUGUST 2016 - APRIL 2019",
+      "In this project, I focus on developing data processing functionalities (server-side, Java) and automating web page interactions (client-side, Python) within Robotic Process Automation (RPA).",
+    icon: React.createElement(CgWorkAlt),
+    date: "SEPTEMBER 2021 - AUGUST 2022",
   },
   {
     title: "Software Engineer",
     company: "Nanjing Asiainfo Software Ltd.",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "In response to the latest OSS domain specifications, I spearheaded the upgrade of the PG module, achieving a 20% reduction in project delivery times through efficient time management and clear requirement documentation. ",
     icon: React.createElement(CgWorkAlt),
     date: "JULY 2019 - MAY 2021",
   },
   {
     title: "Software Engineer",
-    company: "TD SYNNEX Information Technologies Ltd.",
+    company: "Shenzhen Tianlanse Software Service Ltd.",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "SEPTEMBER 2021 - AUGUST 2022",
+      "As a key developer, I've significantly impacted diverse projects, leading the development of the equipment management module in the production management backend system with a 20% improvement in query speed.",
+    icon: React.createElement(CgWorkAlt),
+    date: "AUGUST 2016 - APRIL 2019",
   },
+
 ] as const;
 
 export const projectsData = [
