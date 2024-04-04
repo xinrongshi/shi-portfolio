@@ -62,14 +62,14 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Shi-Portfolio",
+    title: "Portfolio",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["React", "Next.js", "TypeScript", "Tailwind", "Vercel"],
     imageUrl: imgPortfolio,
   },
   {
-    title: "LLM-Vector-Database-Integration",
+    title: "LLM&VectorDatabase Integration",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: [
@@ -83,7 +83,7 @@ export const projectsData = [
     imageUrl: imgLLM,
   },
   {
-    title: "Personal-Blog",
+    title: "Personal Blog",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["java", "javascript", "React", "MariaDB", "AWS-EC2", "SpringBoot"],
