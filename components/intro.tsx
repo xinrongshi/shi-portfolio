@@ -80,7 +80,7 @@ export default function Intro() {
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none
-          focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition dark:text-white/90"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -91,8 +91,8 @@ export default function Intro() {
         </Link>
         <a
           className="group bg-white text-gray-700 px-7 py-3 flex items-center gap-2 rounded-full outline-none
-          focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack"
-          href="/public/Lexi-Shi-CV.pdf"
+          focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/70"
+          href="/Lexi-Shi-CV.pdf"
           download
         >
           Download CV{" "}
@@ -100,7 +100,7 @@ export default function Intro() {
         </a>
         <a
           className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full text-[1.35rem]
-          focus:scale-[1.2] hover:text-gray-950 hover:scale-[1.2] active:scale-105 transition cursor-pointer borderBlack"
+          focus:scale-[1.2] hover:text-gray-950 hover:scale-[1.2] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/70"
           href="https://www.linkedin.com/in/xinrong-shi/"
           target="_blank"
         >
@@ -108,7 +108,7 @@ export default function Intro() {
         </a>
         <a
           className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full text-[1.35rem] 
-          focus:scale-[1.2] hover:text-gray-950 hover:scale-[1.2] active:scale-105 transition cursor-pointer borderBlack"
+          focus:scale-[1.2] hover:text-gray-950 hover:scale-[1.2] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/70"
           href="https://github.com/xinrongshi"
           target="_blank"
         >
