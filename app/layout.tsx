@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import Header from "@/components/header";
 import "./globals.css";
 import React, { ReactNode } from "react";
