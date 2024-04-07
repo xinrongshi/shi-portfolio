@@ -3,6 +3,7 @@ import "./globals.css";
 import React, { ReactNode } from "react";
 import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <ActiveSectionContextProvider>
           <Header />
           {children}
+          <Toaster position="top-right" />
         </ActiveSectionContextProvider>
       </body>
     </html>

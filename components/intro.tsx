@@ -91,7 +91,7 @@ export default function Intro() {
         </Link>
         <a
           className="group bg-white text-gray-700 px-7 py-3 flex items-center gap-2 rounded-full outline-none
-          focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
+          focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack"
           href="/public/Lexi-Shi-CV.pdf"
           download
         >
@@ -100,7 +100,7 @@ export default function Intro() {
         </a>
         <a
           className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full text-[1.35rem]
-          focus:scale-[1.2] hover:text-gray-950 hover:scale-[1.2] active:scale-105 transition cursor-pointer border border-black/10"
+          focus:scale-[1.2] hover:text-gray-950 hover:scale-[1.2] active:scale-105 transition cursor-pointer borderBlack"
           href="https://www.linkedin.com/in/xinrong-shi/"
           target="_blank"
         >
@@ -108,7 +108,7 @@ export default function Intro() {
         </a>
         <a
           className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full text-[1.35rem] 
-          focus:scale-[1.2] hover:text-gray-950 hover:scale-[1.2] active:scale-105 transition cursor-pointer border border-black/10"
+          focus:scale-[1.2] hover:text-gray-950 hover:scale-[1.2] active:scale-105 transition cursor-pointer borderBlack"
           href="https://github.com/xinrongshi"
           target="_blank"
         >

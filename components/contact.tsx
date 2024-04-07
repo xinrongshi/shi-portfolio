@@ -3,17 +3,19 @@
 import { useSectionInView } from "@/lib/hooks";
 import React from "react";
 import SectionHeading from "./section-heading";
-import { FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { sendEmail } from "@/actions/sendEmail";
+import SubmitBtn from "./submit-btn";
+import toast from "react-hot-toast"
 
 export default function Contact() {
-  const { ref } = useSectionInView("Contact");
+  const { ref } = useSectionInView("Contact", 0.5);
 
   return (
     <motion.section
       ref={ref}
       id="contact"
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+      className="scroll-mt-28 mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
       initial={{
         opacity: 0,
       }}
@@ -35,19 +37,35 @@ export default function Contact() {
         </a>{" "}
         or through this form.
       </p>
-      <form className="mt-10 flex flex-col dark:text-black">
+      <form
+        className="mt-10 flex flex-col dark:text-black"
+        action={async (formData) => {
+          const { data, error } = await sendEmail(formData);
+
+          if (error) {
+            toast.error(error);
+            return;
+          }
+
+          toast.success("Email sent successfully!");
+        }}
+      >
         <input
+          placeholder="Your email"
+          name="senderEmail"
           type="email"
+          required
+          maxLength={500}
           className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all"
         ></input>
-        <textarea className="h-52 my-3 rounded-lg borderBlack p-4"></textarea>
-        <button
-          type="submit"
-          className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all"
-        >
-          Submit
-          <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
-        </button>
+        <textarea
+          placeholder="Your message"
+          name="message"
+          required
+          maxLength={5000}
+          className="h-52 my-3 rounded-lg borderBlack p-4"
+        ></textarea>
+        <SubmitBtn />
       </form>
     </motion.section>
   );
