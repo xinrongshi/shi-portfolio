@@ -74,14 +74,14 @@ export const projectsData = [
   {
     title: "Portfolio",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "My personal portfolio, built with Next.js, Tailwind CSS, and TypeScript, hosted on Vercel, elegantly showcases my coding journey and technical skills in a stylish and organized manner.",
     tags: ["React", "Next.js", "TypeScript", "Tailwind", "Vercel"],
     imageUrl: imgPortfolio,
   },
   {
     title: "LLM&VectorDatabase Integration",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "Optimized Large Language Models (LLMs) through Python research, integrating vector databases and OpenAI's GPT-3.5-turbo-16k model. Enhanced response accuracy and relevance for practical applications, showcasing the potential for improved natural language processing in various domains",
     tags: [
       "AI",
       "GPT-3.5-turbo-16k",
@@ -95,7 +95,7 @@ export const projectsData = [
   {
     title: "Personal Blog",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "I developed a dynamic blog application using SpringBoot and MyBatis, seamlessly integrated with React and Redux. Hosted on AWS with MariaDB, ensuring high performance and scalability, it's more than just blogs—it's a collaborative content platform.",
     tags: ["java", "javascript", "React", "MariaDB", "AWS-EC2", "SpringBoot"],
     imageUrl: imgBlog,
   },

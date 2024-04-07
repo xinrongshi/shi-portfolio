@@ -16,8 +16,8 @@ interface LayoutProps {
 }
 
 export const metadata = {
-  title: "This is Xinrong Shi",
-  description: "Xinrong is a full-stack developer with 7 years of experience.",
+  title: "This is Lexi",
+  description: "Lexi is a full-stack developer with 7 years of experience.",
 };
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
