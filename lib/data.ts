@@ -47,7 +47,7 @@ export const experiencesData = [
     title: "Software Engineer",
     company: "TD SYNNEX Information Technologies Ltd. (U.S.-based company ranked No. 215 on the 2023 FORTUNE Global 500 List)",
     description:
-      "In this project, I focus on developing data processing functionalities (server-side, Java) and automating web page interactions (client-side, Python) within Robotic Process Automation (RPA).",
+      "In this role, my primary focus revolves around developing data processing functionalities on the server-side using Java and automating web page interactions on the client-side using Python as part of Robotic Process Automation (RPA) initiatives.",
     icon: React.createElement(CgWorkAlt),
     date: "SEPTEMBER 2021 - AUGUST 2022",
   },
