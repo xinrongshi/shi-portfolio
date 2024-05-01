@@ -101,7 +101,7 @@ export default function Intro() {
         <a
           className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full text-[1.35rem]
           focus:scale-[1.2] hover:text-gray-950 hover:scale-[1.2] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/70"
-          href="https://www.linkedin.com/in/xinrong-shi/"
+          href="https://www.linkedin.com/in/lexi-shi/"
           target="_blank"
         >
           <BsLinkedin />
