@@ -1,6 +1,5 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import imgPortfolio from "@/public/portfolio.jpg";
 import imgBlog from "@/public/blog.jpg";
@@ -104,6 +103,8 @@ export const projectsData = [
 export const skillsData = [
   "JAVA",  
   "Python",
+  "C#",
+  ".NET",
   "JavaScript",
   "TypeScript",
   "AWS",
