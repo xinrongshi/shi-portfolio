@@ -39,6 +39,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <ThemeSwitch />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
+        <Analytics />
       </body>
     </html>
   );
