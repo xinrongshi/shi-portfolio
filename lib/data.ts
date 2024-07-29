@@ -3,6 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import imgPortfolio from "@/public/portfolio.jpg";
 import imgBlog from "@/public/blog.jpg";
+import imgBitnest from "@/public/bitnest.jpg";
 import imgLLM from "@/public/LLM-vectorDatabase.jpg";
 
 export const links = [
@@ -70,6 +71,13 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Bitnest Loop",
+    description:
+      "This DeFi platform features USDT circulation, lending, profit distribution, and referral rewards. I handled backend development, maintained Supabase (PostgreSQL), and used TypeScript and JavaScript for APIs, gaining Web3 experience.",
+    tags: ["Node.js", "Next.js", "JavaScript", "TypeScript" ],
+    imageUrl: imgBitnest,
+  },
   {
     title: "Portfolio",
     description:
