@@ -10,29 +10,30 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-28 max-w-[40rem] text-center leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="about"
     >
       <SectionHeading>About Me</SectionHeading>
-      <p className="mb-3 ">
-        Combining a background in Marketing with a passion for coding, I've
-        ventured into the world of programming out of genuine interest. From
-        self-learning Java to exploring JavaScript and beyond, I've embraced
-        continuous learning, always eager to expand my skill set with new
-        languages and tools.
-      </p>
-      <div className="mt-4">
-        <p>
-          Outside of work, I find joy in staying active, with a recent interest
-          in bouldering catching my attention. It's a refreshing way to unwind
-          and challenge myself physically and mentally. Join me on this journey
-          as I blend the art of persuasion with the logic of code, navigating
-          the ever-evolving landscape of technology with curiosity and
-          determination.
-        </p>
+      <div className="bg-white p-6 rounded-lg shadow-md">
+        <motion.p
+          className="mb-3 text-gray-700"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+        >
+          Hey there! 👋 I'm Lexi, a Software Engineer with a love for coding and over 7 years of experience. From mastering backend intricacies to tackling frontend challenges, I'm always eager to learn and grow.
+        </motion.p>
+        <motion.p
+          className="mt-4 text-gray-700"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+        >
+          Outside of work, I enjoy staying active, especially with bouldering. It's a great way to relax and push my limits. Let's connect and create something amazing together! 🚀
+        </motion.p>
       </div>
     </motion.section>
   );
