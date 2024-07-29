@@ -17,9 +17,9 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About Me</SectionHeading>
-      <div className="bg-white p-6 rounded-lg shadow-md">
+      <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
         <motion.p
-          className="mb-3 text-gray-700"
+          className="mb-3 text-gray-700 dark:text-gray-300"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
@@ -27,7 +27,7 @@ export default function About() {
           Hey there! 👋 I'm Lexi, a Software Engineer with a love for coding and over 7 years of experience. From mastering backend intricacies to tackling frontend challenges, I'm always eager to learn and grow.
         </motion.p>
         <motion.p
-          className="mt-4 text-gray-700"
+          className="mt-4 text-gray-700 dark:text-gray-300"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
