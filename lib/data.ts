@@ -75,7 +75,7 @@ export const projectsData = [
     title: "Bitnest Loop",
     description:
       "This DeFi platform features USDT circulation, lending, profit distribution, and referral rewards. I handled backend development, maintained Supabase (PostgreSQL), and used TypeScript and JavaScript for APIs, gaining Web3 experience.",
-    tags: ["Node.js", "Next.js", "JavaScript", "TypeScript" ],
+    tags: ["Node.js", "Next.js", "JavaScript", "TypeScript", "PostgreSQL", "Supabase" ],
     imageUrl: imgBitnest,
   },
   {
@@ -117,6 +117,7 @@ export const skillsData = [
   "TypeScript",
   "AWS",
   "MySQL",
+  "PostgreSQL",
   "MariaDB",
   "Redis",
   "MongoDB",
