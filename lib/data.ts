@@ -3,7 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import imgPortfolio from "@/public/portfolio.jpg";
 import imgBlog from "@/public/blog.jpg";
-import imgBitnest from "@/public/bitnest.jpg";
+import imgBitnest from "@/public/bitnest.png";
 import imgLLM from "@/public/LLM-vectorDatabase.jpg";
 
 export const links = [
